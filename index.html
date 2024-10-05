@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darts Scorer</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <h1 id="focim">Darts Scorer</h1>
+
+    <!-- Sets és Legs container -->
+    <div class="container">
+        <h2 id="sets">Sets</h2>
+        <h2 id="legs">Legs</h2>
+    </div>
+
+    <!-- Input mezők container -->
+    <div class="input-container">
+        <input type="text" id="set" placeholder="Enter the number of sets">
+        <input type="text" id="leg" placeholder="Enter the number of legs">
+    </div>
+
+    <!-- Játékos nevek -->
+    <div class="name-container">
+        <h2 id="p1">Player 1</h2>
+        <h2 id="p2">Player 2</h2>
+    </div>
+
+    <!-- Név input mezők -->
+    <div class="input-container">
+        <input type="text" id="name1" placeholder="Enter your name">
+        <input type="text" id="name2" placeholder="Enter your name">
+    </div>
+
+    <!-- Game mode -->
+    <div class="select-container">
+        <label id="gamemode" for="valasztas">Game mode</label>
+        <select id="valasztas" name="valasztas">
+            <option value="301">301</option>
+            <option value="501">501</option>
+            <option value="701">701</option>
+        </select>
+    </div>
+
+    <!-- Start és Restart gombok -->
+    <div class="button-container">
+        <input type="button" id="startgomb" value="START GAME">
+        <input type="button" id="restartgomb" value="RESTART GAME">
+    </div>
+
+    <!-- Pontszám tábla -->
+    <table id="initialize">
+        <tr class="kozepestr">
+            <td id="player1"></td>
+            <td id="player2"></td>
+        </tr>
+
+        <tr>
+            <td colspan="2" class="section-title">Scores</td>
+        </tr>
+        <tr>
+            <td id="score1"></td>
+            <td id="score2"></td>
+        </tr>
+        <tr>
+            <td><input type="text" id="player1score" style="width: 100px; height: 40px;" placeholder="Player 1 Score"></td>
+            <td><input type="text" id="player2score" style="width: 100px; height: 40px;" placeholder="Player 2 Score"></td>
+        </tr>
+        <tr>
+            <td colspan="2" class="section-title">Legs</td>
+        </tr>
+        <tr class="trkicsi">
+            <td id="player1_legs">0</td>
+            <td id="player2_legs">0</td>
+        </tr>
+        <tr>
+            <td colspan="2" class="section-title">Sets</td>
+        </tr>
+        <tr class="trkicsi">
+            <td id="player1_sets">0</td>
+            <td id="player2_sets">0</td>
+        </tr>
+        <tr>
+            <td colspan="2" class="section-title">Averages</td>
+        </tr>
+        <tr class="trkicsi">
+            <td id="player1_avg">0</td>
+            <td id="player2_avg">0</td>
+        </tr>
+    </table>
+
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
